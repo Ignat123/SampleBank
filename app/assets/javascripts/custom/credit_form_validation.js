@@ -181,17 +181,17 @@ function validateEleventhStep() {
     validateElementWithNullify("[name='rude_credits']:checked", 11, "Укажите наличие опыта кредитование в Rude-bank");
     $("#bank_credit_rude_credits").val($("[name='rude_credits']:checked").val());
     validateElementWithNullify("[name='another_credits']:checked", 11, "Укажите наличие опыта кредитование в других банках");
-    $("#another_credits").val($("[name='another_credits']:checked").val());
+    $("#bank_credit_another_credits").val($("[name='another_credits']:checked").val());
     validateElementWithNullify("[name='credit_violation']:checked", 11, "Укажите наличие случаев нарушения кредита");
-    $("#credit_violation").val($("[name='credit_violation']:checked").val());
+    $("#bank_credit_credit_violation").val($("[name='credit_violation']:checked").val());
     validateElementWithNullify("[name='percent_violation']:checked", 11, "Укажите наличие случаев нарушения процентов");
-    $("#percent_violation").val($("[name='percent_violation']:checked").val());
+    $("#bank_credit_percent_violation").val($("[name='percent_violation']:checked").val());
     validateElementWithNullify("[name='another_banks_credits']:checked", 11, "Укажите наличие поручительства в других банках");
-    $("#another_banks_credits").val($("[name='another_banks_credits']:checked").val());
+    $("#bank_credit_another_banks_credits").val($("[name='another_banks_credits']:checked").val());
     validateElementWithNullify("[name='guarantee']:checked", 11, "Укажите наличие денежных обязательств");
-    $("#guarantee").val($("[name='guarantee']:checked").val());
+    $("#bank_credit_guarantee").val($("[name='guarantee']:checked").val());
     validateElementWithNullify("[name='installments']:checked", 11, "Укажите наличие задолженности по товарам в рассрочку");
-    $("#installments").val($("[name='installments']:checked").val());
+    $("#bank_credit_installments").val($("[name='installments']:checked").val());
 
 
     if ($("#step-errors-11").is(':hidden') == true) {
